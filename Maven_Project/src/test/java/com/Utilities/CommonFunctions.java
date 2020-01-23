@@ -7,6 +7,7 @@ import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
@@ -18,10 +19,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class CommonFunctions extends StaticVariables{
 
+	
+
 	/****** Browser Launch ******/
 	public void chromeBrowserLaunch() {
 		
-		System.setProperty("webdriver.chrome.driver", "/Users/madhubharti/Desktop/Selenium/Workspace/Maven_Project/drivers/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "/Users/madhubharti/git/repository/Maven_Project/drivers/chromedriver");
 		 driver = new ChromeDriver();
 	}
 	
@@ -150,7 +153,18 @@ public void alertHandleWithCancelButton() {
 
 }
 
+/*********** Javascript executor ***********/
+
+public void clickUsingJavaScriptExecutor(By locator) {
+	WebElement element = driver.findElement(locator);
+	((JavascriptExecutor)driver).executeScript("arguments[0].click();",element);
+	
 }
+
+
+}
+
+
 
 
 

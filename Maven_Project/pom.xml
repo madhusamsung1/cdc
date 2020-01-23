@@ -57,6 +57,12 @@
     <version>4.1.0</version>
 </dependency>
   
+  <!-- https://mvnrepository.com/artifact/org.atmosphere.client/javascript -->
+<dependency>
+    <groupId>org.atmosphere.client</groupId>
+    <artifactId>javascript</artifactId>
+    <version>2.3.9</version>
+</dependency>
   
   
   

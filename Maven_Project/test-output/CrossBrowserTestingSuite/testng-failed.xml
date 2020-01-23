@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [CrossBrowserTestingSuite]">
+  <test thread-count="5" name="ChromeTestResult(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.TestScenarios.SBI_LoginPage_Alert">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="login"/>
+          <include name="takeScreensho"/>
+        </methods>
+      </class> <!-- com.TestScenarios.SBI_LoginPage_Alert -->
+    </classes>
+  </test> <!-- ChromeTestResult(failed) -->
+  <test thread-count="5" name="FirefoxTestResults(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="com.TestScenarios.SBI_LoginPage_Alert">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="login"/>
+          <include name="takeScreensho"/>
+        </methods>
+      </class> <!-- com.TestScenarios.SBI_LoginPage_Alert -->
+    </classes>
+  </test> <!-- FirefoxTestResults(failed) -->
+</suite> <!-- Failed suite [CrossBrowserTestingSuite] -->

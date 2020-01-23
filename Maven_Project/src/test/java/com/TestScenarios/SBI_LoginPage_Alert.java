@@ -38,20 +38,19 @@ public class SBI_LoginPage_Alert extends StaticVariables {
 
 		driver.get(prop.getProperty("SBI_URL"));
 		cfn.implicitWait(20);
-		
-		//Develop the actual Scripts....
+
+		// Develop the actual Scripts....
 		cfn.clickKeysByAnyLocators(locator.sbi_Login);
 		cfn.implicitWait(5);
 		cfn.clickKeysByAnyLocators(locator.sbi_ContinueToLogin);
 		cfn.implicitWait(5);
 		cfn.clickKeysByAnyLocators(locator.sbi_LoginPage_LoginButton);
 		cfn.implicitWait(5);
-		
-		//handle with Alert
+
+		// handle with Alert
 		cfn.explicitWaitForAlert(5);
 		cfn.alertHandleWithOkButton();
-		
-		
+
 	}
 
 	@Parameters("browser")
